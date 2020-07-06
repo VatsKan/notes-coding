@@ -11,6 +11,9 @@
 * to list all files in a directory (including hidden files)
     ```ls -a```
 
+* open a file in a text editor 
+    ```open <filepath>```
+
 * To look up: 
     ```echo```
     ```cat```
