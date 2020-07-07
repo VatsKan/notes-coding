@@ -1,7 +1,5 @@
 # Python 
 
-
-
 ## Basic Syntax
 
 ```
@@ -12,8 +10,6 @@ mathematics:
 ```
 3 // 4  # integer division
 ``` 
-
-
 
 ## Basic in-built functions
 

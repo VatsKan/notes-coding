@@ -1,0 +1,2 @@
+- will need to enable https to take stripe payments
+- need to make sure PCI compliant
