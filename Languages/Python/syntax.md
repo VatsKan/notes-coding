@@ -1,4 +1,4 @@
-# Python 
+# Python Basics
 
 ## Other resources
 
@@ -55,11 +55,35 @@ else:
 * logic keywords:
 and, or, not
 
+* loops
+    - while loop:
+    ```
+    i = 1
+    sum = 0
+    while i <= 7:
+        sum += i
+        i += 1 # increment
+    print(sum)
+    ```
+
 ## Basic in-built functions
 
 print("Hello world")
 
+```
+number = 10
+print(number, end=" ") # This will print " " after number. instead of on a new line.
+```
+
 string concatonation: "hi" + "john"
+
+## Data structures
+
+* lists 
+    - (seems equivalent of JS array, in terms of accessing, declaring)
+    - can get length of list using 
+    ```len(my_list)```, which returns an int. 
+    - ```my_list.append("hi")``` adds "hi" to end of list. 
 
 ## Functionality Notes
 
