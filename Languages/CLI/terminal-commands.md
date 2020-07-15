@@ -26,3 +26,15 @@
     ```top```
     ```sudo```
     ```osascript```
+    difference between backticks and string. 
+
+* conditionals
+```
+ if [ "a" != "b" ]; 
+  then
+    echo 'clearly'
+    echo 'not equal' 
+  else 
+    echo 'they are equal'
+ fi
+```
