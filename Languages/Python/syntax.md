@@ -6,30 +6,32 @@ Project Euler (for problems)
 
 ## Basic Syntax
 
-```
+```python
 # this is a comment
 ```
-```
+```python
 helloStr = "hello"  # variable assignment
 ```
-```
+```python
 name = input("enter name: ") # add user input
 ```
 
 * mathematics:
-    ```
+    ```python
     3 // 4  # integer division
     3 ** 4  # exponentiation
     ``` 
     - order of ops standard maths and other math ops are as usual.
-    - comparison ops are the usual (e.g. ==, <=, etc.)
+    - comparison ops are the usual (e.g. ```==```, ```<=```, etc.), apart from ```!=```
     - assignment shorthand ops ```+= -= *= /=``` are usual.
 
 * string manipulation
-  ```print(2 * "hi") # "hihi"```
+  ```python
+  print(2 * "hi") # "hihi"
+  ```
 
 * type conversion: 
-  ```
+  ```python
   # type_name(expression)
   str(2)    # "2"
   int("3")  # 3
@@ -39,7 +41,7 @@ name = input("enter name: ") # add user input
   ```
 
 * conditionals
-  ```
+  ```python
   if condition_is_true:
     execute_this_code
   elif condition_2:
@@ -57,7 +59,7 @@ name = input("enter name: ") # add user input
 
 * loops
     - while loop:
-      ```
+      ```python
       i = 1
       sum = 0
       while i <= 7:
@@ -67,22 +69,28 @@ name = input("enter name: ") # add user input
       ```
 
     - for loop:
-      ``` 
+      ```python 
       # (define integers a and b)
       for i in range(a, b):
         print(i)
         # iterates through a to b-1
       ```
-      ``` 
+      ```python 
       # (define list called my_list)
       for item in my_list:
         print(item)
         # iterates through list
       ```
+      ```python
+      # (define a dictionary d={...})
+      for key in dictionary:
+          print(dictionary[key])
+          # iterates through dictionary, printing values of the keys.
+      ```
 
 * functions
     - e.g.
-      ```
+      ```python
       def funcName(arg1, arg2):
         return arg1 * arg2
       ```
@@ -95,7 +103,7 @@ name = input("enter name: ") # add user input
 
 * ```print("Hello world")```
  
-  ```
+  ```python
   number = 10
   print(number, end=" ") # This will print " " after number. instead of on a new line.
   ```
@@ -103,6 +111,9 @@ name = input("enter name: ") # add user input
 * LOOK UP ```range(10)``` (does it give an array [1, ..., 10]?) and ```range(1, 5)```
 
 ## Data structures
+
+* dictionaries
+  - seems equivalent to javascript objects. (same syntax, but using bracket notation to access values of keys)
 
 * lists 
     - (seems equivalent of JS array, in terms of accessing, declaring)
@@ -118,7 +129,6 @@ name = input("enter name: ") # add user input
     my_list = my_list1 + my_list2   # ["hi", "hello", "jim", "jack"]
     ```
     - ```sorted(my_list)``` arranges my_list in alphabetical order, or numerical order.
-
 
 * strings 
   - concatonation: ```"hi" + "john"```
