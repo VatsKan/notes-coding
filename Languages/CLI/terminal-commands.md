@@ -15,6 +15,13 @@
 * to list all files in a directory (including hidden files)
     ```ls -a```
 
+* deleting
+    - empty directory
+    ```rmdir <directoryName>```
+    - file
+    ```rm <filename>```
+    - recursively -- LOOK UP
+
 * print a string in terminal
     ```echo "string"```
     ```echo <filepath>```
@@ -29,12 +36,13 @@
     difference between backticks and string. 
 
 * conditionals
-```
- if [ "a" != "b" ]; 
-  then
-    echo 'clearly'
-    echo 'not equal' 
-  else 
-    echo 'they are equal'
- fi
-```
+    [reference](https://linuxacademy.com/blog/linux/conditions-in-bash-scripting-if-statements/)
+    ```
+    if [ "a" != "b" ]; 
+    then
+        echo 'clearly'
+        echo 'not equal' 
+    else 
+        echo 'they are equal'
+    fi
+    ```
