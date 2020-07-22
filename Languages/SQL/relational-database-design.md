@@ -3,9 +3,6 @@
 [Reference](https://www.dartmouth.edu/~bknauff/dewbd/2004-02/DB-intro.pdf)
 
 ## Terminology
-
-- Anomalies: flaws that arise due to flaws in database design.
-
 - Table || Relations
 - Columns || Attributes
 - Rows || Records || Tuples
@@ -24,8 +21,17 @@
 - Primary key: a column or set of columns that will be used to identify a single row from the table
 - Foreign key: a column that is a primary key in another table [CHECK]
 
+### Anomolies
+- Anomalies: flaws that arise due to flaws in database/schema design.
+
+- Insertion anomalies occur when we try to insert data into a flawed table. e.g. it is not obvious which of the rows in the database the data will be inserted into. 
+
+- Deletion anomalies occur when we delete data we do not want to due to a flawed schema.
+
+- Update anomalies occur when we change data in a flawed schema. e.g. we want to update the department name of several employees but miss one. 
+
 ## Design principles
-- Avoid lots of null values
+- Avoid lots of null values...e.g. if out of every 100 employees, 1 has a special qualification (so 99 will be NULL), better to store qualifications in a new table and relate it.
 - Avoid insertion/deletion/update anomalies
 - Redundancy vs Loss of Data
 - Design cycle: identify data->set data types->normalize tables/assign keys->rinse/repeat
@@ -74,6 +80,8 @@ to support the range of values you want to store.
 
 
 ### Normalisation of data
+[EDIT/SUMMARISE + FINISH THIS SECTION]
+
 We aim to use the
 least amount of storage space for our database while still maintaining all links between data. Additionally, a normalized DB schema avoids certain anomalies and so keep consistent data in the database.
 
@@ -84,6 +92,8 @@ They can help make your code which accesses the
 database easier to understand, easier to expand upon, and in some cases, actually speed up your
 application. 
 
+ Rules of Normalization are enforced by eliminating redundancy and inconsistent
+dependency in your table designs.
 
 
 ### Other things to note
