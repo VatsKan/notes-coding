@@ -35,6 +35,9 @@
     ```osascript```
     difference between backticks and string. 
 
+* can learn vim using
+    ```vimtutor```
+
 * conditionals
     [reference](https://linuxacademy.com/blog/linux/conditions-in-bash-scripting-if-statements/)
     ```
