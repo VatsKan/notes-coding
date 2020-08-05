@@ -1,5 +1,12 @@
 # NPM
 
+### Commands
+
+- To list all globally installed npm packages
+```npm list -g --depth 0```
+(if you get rid of ```--depth 0``` it will list all the packages in the subtrees too!)
+(if you get rid of ```-g``` flag, it will list all the npm packages in the directory you are in)
+
 ### How to choose the right npm package
 
 Ref: https://dev.to/adrianbdesigns/checklist-for-choosing-an-optimal-npm-package-4dpm
