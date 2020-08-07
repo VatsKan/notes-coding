@@ -14,3 +14,5 @@ then run
 which will remove all stuff
 specified in gitignore file.
 Then add and commit as usual.
+
+- ```git diff branch1 branch2``` will show you differences between branch1 and branch2. [Q: does it show you the diff between the remote or local branches?]
