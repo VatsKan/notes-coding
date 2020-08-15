@@ -65,3 +65,54 @@ git add, git commit, (if there are merge conflicts which you change).
 
 # Week 2
 
+
+# Week [SOMEHTH9NG] - Node
+
+- nodemon 
+- modules: fs, path, url
+- go over difference between 'require' and 'import'
+- module.exports.
+- router -- how to build properly in vanilla node
+- npm --- how to use version manager of dependencies properly. how to check for security risks. how to find reliable packages. 
+
+# Week 6 - Authentication
+
+### Cookies
+- cookies stored on the browser are specific to the domain. 
+- cookies can be attached to the response from a server, in the header, 'Set-Cookie'. 
+- In Node.js, res.setHeader is used for setting single headers, res.writeHead can be used for setting multiple headers at the same time.
+```javascript
+res.setHeader('Set-Cookie', 'logged_in=true');
+
+// OR
+
+res.writeHead(200, { 'Set-Cookie': 'logged_in=true' });
+```
+- ```req.headers.cookie``` is used to read the cookie sent by the server 
+- its easy to change cookies in the client so it is not secure and can be tampered with, unless you protect it in some way (see later workshop)
+- add (flags)[https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie] to cookie to make it more secure. e.g. ```res.setHeader('Set-Cookie', 'logged_in=true; HttpOnly; secure; Max-Age=9000');```. ```secure``` can only be used with https requests. HttpOnly prevents JS being inserted (ie XSS attack). Max-age sets life time of cookie in seconds.
+- can delete a cookie by overwriting it or setting max-age to 0. 
+- **3rd party cookies**. a site (say foo.com) will not send cookies to another server (say bar.com). but bar.com can access cookies from foo.com, through javascript (by making an AJAX request). hence if you're on a page with some 3rd party javascript running, e.g. a facebook comment box for example, even if you're not on the facebook site, it can track you independently of the domain you're on. Some browsers allow you to turn off 3rd party cookies. 
+
+#### Questions
+- I seem to be able to set a cookie using a GET request as well as a POST request, but for some reason, when i change the method on the html form to GET, with action='login', and click submit, it redirects to 'index.html/login?' instead of 'index.html/login'. Why 
+does the question mark appear when its a get request?... i.e. is it because a forms default behaviour to always send a query string paramater, even if it is empty? does a form always expect to send a post request
+and so sending a get request from a form is wrong?
+is it possible to change this default behaviour? 
+- Is it normal to set cookies only on post request? or can it also be set on a get request?
+- Whats the difference between cookies and using local/session storage? Are cookies only available in browsers (but not other clients such as native apps)?
+- Aside: how do native apps make requests to the server (as fetch() is a browser method right?)
+- what is typeof req.headers.cookie? 
+- why do the console logs come up in the terminal instead of the browser when logging from the router?
+- when deleting a cookie is it also important to set the HttpOnly? 
+- what happens if you leave out res.end()?
+- what is the value in setting the Content-Length header?
+
+#### Look up
+- readFile
+- module.exports
+- __dirname
+- why use path.join? why not just store in an array and use .join()?
+- how does one error handle on line 13 of router.js
+- go over different response codes. how is client behaviour (in particular browsers) affected by the different response codes sent? what if you send the wrong response code?
+- use cases of cookies in production level code. and alternatives to cookies.
