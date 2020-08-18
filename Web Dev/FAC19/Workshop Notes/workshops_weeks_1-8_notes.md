@@ -77,6 +77,21 @@ git add, git commit, (if there are merge conflicts which you change).
 
 # Week 6 - Authentication
 
+### Hashing, Salting, bcrypt.
+- plaintext passwords mean employees can see your passwords, and hackers who get into the database immediatley know all the passwords.
+- hashing is designed to be 'one-way'/irreversible, hard to reverse the process.
+- don't do it manually but use a good library as things can go wrong. 
+
+#### To look up
+- understand the package.json script:
+```
+"scripts": {
+    "dev": "nodemon workshop/server.js --ignore **/*.json"
+},
+```
+[FINISH WRITING NOTES ON THIS WORKSHOP]
+
+
 ### Cookies
 - cookies stored on the browser are specific to the domain. 
 - cookies can be attached to the response from a server, in the header, 'Set-Cookie'. 
@@ -116,3 +131,32 @@ is it possible to change this default behaviour?
 - how does one error handle on line 13 of router.js
 - go over different response codes. how is client behaviour (in particular browsers) affected by the different response codes sent? what if you send the wrong response code?
 - use cases of cookies in production level code. and alternatives to cookies.
+
+
+### JSON Web Tokens
+[WRITE NOTES]
+
+### Form Validation
+[FINISH WORKSHOP AND EXPAND ON NOTES]
+
+#### HTML5 validation
+- aria-label="hidden", (good for adding an asterix to a span for required inputs)
+- aria-describedby="id" (links an element with id to input if aria-describedby is attribute of the input)
+- css attributes:  :invalid, :required, :valid
+- pattern="someregex" (note ".*\d.*" is regex pattern to check a digit exists), minlength="8"  (attr on password input)
+
+    - problems: marked invalid before user touches it. cannot style error messages
+    - should start with HTML validation, and add JS custom validation on top. For users who do not have custom JS. 
+
+#### Custom JS validation
+
+- aria-invalid="false" to 
+
+#### Questions
+- why ```<span>``` instaed of ```<div>```?
+- can aria-invalid="false" be set in html5 validation at first? or does this mean it can never be updated?
+    should this be done in html5 or in JS
+
+#### issues
+- the validation for email doesn't seem to do much! maybe check if there's an @ sign and a . or something?
+- why is aria-describedby for email put in a random place rather than when its done for the password?
