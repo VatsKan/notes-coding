@@ -1,5 +1,17 @@
 # General terminal commands
 
+* ```|``` (pipe). 
+* ```grep```
+* ```ps -ax``` list all processes
+* ```kill <processId>``` kills the process with processId (number). Be careful!
+* ```ps -ax | grep <SearchValue>``` will search all processes with the search value and print them. [Ref](https://www.chriswrites.com/how-to-view-and-kill-processes-using-the-terminal-in-mac-os-x/).
+
+* ```process1 & process2``` will run process 1 in the background. 
+    ```fg <processId>``` to bring a process to foreground.
+    ```jobs``` to list all jobs. 
+
+CHECK ALL ABOVE AND UNDERSTAND BETTER!
+
 * ```open <file>``` is equivalent to double clicking on a file in the Finder. (e.g. text based files will open in your default text editor)
 
     To open a new terminal window
