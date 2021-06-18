@@ -9,6 +9,8 @@
 * ```process1 & process2``` will run process 1 in the background. 
     ```fg <processId>``` to bring a process to foreground.
     ```jobs``` to list all jobs. 
+    [Ref](https://stackoverflow.com/questions/3004811/how-do-you-run-multiple-programs-in-parallel-from-a-bash-script)
+    [Ref](https://bashitout.com/2013/05/18/Ampersands-on-the-command-line.html)
 
 CHECK ALL ABOVE AND UNDERSTAND BETTER!
 

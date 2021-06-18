@@ -2,6 +2,17 @@
 
 [git rebasing reference](https://www.git-tower.com/learn/git/ebook/en/desktop-gui/advanced-topics/rebase#start)
 
+## git workflow
+
+[All git workflows link](https://www.atlassian.com/git/tutorials/comparing-workflows)
+
+Gitflow:
+
+[Gitflow original link](https://nvie.com/posts/a-successful-git-branching-model/)
+
+[Gitflow link](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+
+
 ## commands
 
 - ```git reset <filename>``` unstages a ```git add <filename>```. 
